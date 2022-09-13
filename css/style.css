@@ -10,8 +10,12 @@ html {
 }
 .dropcap{
 display: flex;
-font-size: 3em;
+font-size: 400%;
 float: left;
+line-height: 70%;
+width: 0.65em;
+
+
 
 }
 #firstpar{
@@ -31,24 +35,24 @@ p {
   margin-bottom: .67em;
 }
 nav, footer {
-  background-color: #444;
+  background-color: #5F4B32;
 }
 footer {
   text-align: center;
   padding: 1em 0 .3em 0;
-  color: #D0D0D0;
+  color: #FBF0D9;
 }
 /*-- Main Menu Styles--*/
 nav ul {
   list-style: none;
   padding: 1em;
   display: flex;
-  justify-content: space-between; /*space-evenly;*/
+  justify-content: space-evenly; /*space-between;*/
   width: 100%;
   margin: 0px;
 }
 nav a:link, nav a:visited {
-  color: #D0D0D0;
+  color: #FBF0D9;
   text-decoration: none;
 }
 nav a:hover, nav a:active  {
@@ -65,7 +69,8 @@ header {
   margin-bottom: 2em;
   margin-left: auto;
   margin-right: auto;
-  text-align: center; /*   Am I allowed to do this?*/
+  text-align: center; 
+ 
 }
 header img {
   width: 100%;
@@ -76,7 +81,7 @@ header h1 {
   padding: 0 auto;
   margin-left: auto;
   margin-right: auto;
-  
+   color: #5F4B32;
 }
 .small {
   margin-top: 1em;
@@ -100,9 +105,8 @@ article figure {
   float: right;
 }
 article figcaption {
-  font-size: 0.8em;
-  font: 'sans-serif';
-  font-weight: 400;
+  font-weight: 100;
+  font: 0.8em Roboto, 'sans-serif';
 
 }
 .pagination {
@@ -110,7 +114,7 @@ article figcaption {
   margin-bottom: 2em;
   width: 96%;
   margin: auto;
-  display: flex;
+  display: flex; 
   justify-content: space-evenly;
   padding: 1em;
 }
@@ -118,16 +122,19 @@ a.button {
   border: 2px solid #888;
   padding: .4em 1em .4em 1em;
   text-decoration: none;
-  color: #888;
+  color: #FBF0D9;
   border-radius: 200px;
   font-family: 'Lato', sans-serif;
   font-weight: 300;
   font-size: 80%;
+  background: #5F4B32;
 }
 a.button:hover, a.button:active {
   border: 1px solid #444;
   text-decoration: none;
   color: #222;
+  background: #FBF0D9;
+  color: #5F4B32;
 }
 /*-- changes header and article width on small screens --*/
 @media screen and (max-width: 768px) {
